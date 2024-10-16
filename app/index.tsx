@@ -2,14 +2,14 @@ import { Text, View } from "react-native";
 
 export default function Index() {
   return (
-    <View
+    <View className={'mocha bg-ctp-base'}
       style={{
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
       }}
     >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <Text className={'font-bold text-ctp-lavender bg-ctp-base'}>Pouet</Text>
     </View>
   );
 }
