@@ -6,7 +6,7 @@ export default function RootLayout() {
         <Stack>
             <Stack.Screen name="index" options={{
                 title: 'dodoApp',
-                // headerShown: true,
+                headerShown: true,
                 headerTransparent: true,
                 headerTintColor: '#cba6f7',
                 navigationBarColor: '#1e1e2e',
