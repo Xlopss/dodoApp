@@ -1,4 +1,4 @@
-import {Stack} from "expo-router";
+import { Stack } from "expo-router";
 import "../tailwind.css";
 
 export default function RootLayout() {
@@ -6,7 +6,11 @@ export default function RootLayout() {
         <Stack>
             <Stack.Screen name="index" options={{
                 title: 'dodoApp',
-                headerShown: false
+                // headerShown: true,
+                headerTransparent: true,
+                headerTintColor: '#cba6f7',
+                navigationBarColor: '#1e1e2e',
+                //TODO: Faire en sorte que la navbar change en fonction du thème
             }}/>
         </Stack>
     );
