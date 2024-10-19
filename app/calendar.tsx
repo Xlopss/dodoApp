@@ -1,7 +1,7 @@
-import {View} from "react-native";
-import NextEvents from "../components/NextEvents";
+import {View, Text} from "react-native";
+import React from "react";
 
-export default function Index() {
+export default function Calendar() {
     return (
         <View className={'mocha bg-ctp-base'}
               style={{
@@ -12,7 +12,7 @@ export default function Index() {
                   paddingTop: 70
               }}
         >
-            <NextEvents/>
+            <Text style={{ fontSize: 24, color: '#cba6f7' }}>Calendar Page</Text>
         </View>
     );
 }
