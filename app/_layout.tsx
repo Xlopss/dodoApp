@@ -12,7 +12,8 @@ export default function RootLayout() {
             navigationBarColor: '#1e1e2e',}}
         //TODO: Faire en sorte que la navbar change en fonction du thème
         >
-            <Stack.Screen name="index"/>
+            <Stack.Screen name="index" options={{title: 'Home'}}/>
+            <Stack.Screen name="calendar" options={{title:'Calendar'}}/>
         </Stack>
     );
 }

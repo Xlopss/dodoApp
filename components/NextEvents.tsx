@@ -1,5 +1,6 @@
 import {Image, FlatList, View, Text, TouchableOpacity} from "react-native";
 import {events} from "../datas/fixtures";
+import {useNavigation} from "expo-router";
 
 export default function NextEvents() {
 
@@ -9,6 +10,7 @@ export default function NextEvents() {
     const nextEvent = events.filter(event => event.dodoleft >= 0).reduce((prev, curr) => {
         return new Date(prev.date) < new Date(curr.date) ? prev : curr;
     });
+    const navigation = useNavigation();
 
     return (
         <View className={'mocha bg-ctp-base'} style={{flex: 1, padding: 16, width: '100%'}}>
@@ -36,7 +38,7 @@ export default function NextEvents() {
                     marginRight: 5
                 }}>
                 <Text className={'font-bold text-ctp-lavender text-3xl'}>Événements à venir</Text>
-                <TouchableOpacity onPress={() => alert('Calendrier touché !')}>
+                <TouchableOpacity onPress={() => navigation.navigate('calendar' as never)}>
                     <Image
                         source={require('../assets/img/calendar.png')}
                         style={{width: 35, height: 35, tintColor: '#b4befe'}}/>
