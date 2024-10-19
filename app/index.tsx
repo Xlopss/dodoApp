@@ -1,6 +1,5 @@
 import {View} from "react-native";
 import NextEvents from "../components/NextEvents";
-import NextOne from "../components/NextOne";
 
 export default function Index() {
     return (
@@ -13,7 +12,6 @@ export default function Index() {
                   paddingTop: 100
               }}
         >
-            <NextOne/>
             <NextEvents/>
         </View>
     );
